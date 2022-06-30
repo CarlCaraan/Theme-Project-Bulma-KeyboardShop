@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meow and Friends</title>
+
+    <!-- Bulma Css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="./assets/css/animate.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/fbaf02a1c1.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Start Login Modal -->
+        <div class="modal" id="modal-js-example">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title">Log in to your Account</p>
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <section class="modal-card-body">
+                    <div class="field">
+                        <p class="control has-icons-left has-icons-right">
+                            <input class="input" type="email" placeholder="Email">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                            <span class="icon is-small is-right">
+                                <i class="fas fa-check"></i>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="field">
+                        <p class="control has-icons-left">
+                            <input class="input" type="password" placeholder="Password">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-lock"></i>
+                            </span>
+                        </p>
+                    </div>
+                </section>
+                <footer class="modal-card-foot">
+                    <button class="button is-success">Login</button>
+                    <button class="button">Cancel</button>
+                </footer>
+            </div>
+        </div>
+        <!-- End Login Modal -->
+
+        <!-- Start Navigation -->
+        <nav class="navbar py-4" role="navigation" aria-label="main navigation" id="home">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="https://bulma.io">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7FrYqigJXav_BB129LQjLHyh8XqSvAF2Pug&usqp=CAU"
+                        width="80" height="40">
+                </a>
+
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item custom-active" href="./index.html">
+                        Home
+                    </a>
+                    <a class="navbar-item" href="./about.html">
+                        About Us
+                    </a>
+                    <a class="navbar-item" href="./contact.html">
+                        Contact Us
+                    </a>
+                    <a class="navbar-item" href="#gallery">
+                        Gallery
+                    </a>
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-primary">
+                                <strong>Sign up</strong>
+                            </a>
+                            <a class="button is-light js-modal-trigger" data-target="modal-js-example">
+                                Log in
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navigation -->
+
+        <!-- Start Breadcrumb -->
+        <!-- <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="is-active"><a href="#" aria-current="page">About</a></li>
+            </ul>
+        </nav> -->
+        <!-- End Breadcrumb -->
+
+        <!-- Start Hero Section -->
+        <section class="section herosection-section">
+            <div class="columns">
+                <div class="column wow fadeInLeft">
+                    <h1 class="is-size-2 pt-6 herosection-heading">
+                        Welcome to Meow and Friends
+                    </h1>
+                    <p class="pt-4 is-size-5">
+                        Located in Fog Kids Street, meowandfriends.com.ph is your one-stop-shop for your soon to be
+                        pet companion and pet care
+                        needs. Ranging from a wide variety of pet foods and treats all the way to pet accessories and
+                        pet grooming.
+                        <br><br>
+                    </p>
+                    </p>
+                    <div class="buttons mt-5">
+                        <button class="button is-primary">Contact Us</button>
+                        <button class="button is-link">Get Started</button>
+                    </div>
+                </div>
+                <div class="column wow fadeInRight">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="content">
+                                <img src="https://i.pinimg.com/originals/58/b1/80/58b180bcba5a92d7d95c58153c9ce5b2.png"
+                                    alt="herosection_background">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Hero Section -->
+    </div> <!-- End Container -->
+
+
+    <!-- Start Our Shop -->
+    <section class="py-6 ourshop-section" data-wow-delay=".3s" id="gallery">
+        <div class="center">
+            <h1 class="headings is-size-2 wow fadeInUp">Our Shop</h1>
+        </div>
+        <div class="center">
+            <p class="wow fadeInUp is-size-5" data-wow-delay=".3s">"We believe that good nutrition is the key to raising
+                healthy
+                and happy pets."</p>
+        </div>
+        <div class="container mt-6">
+            <div class="owl-carousel owl-theme">
+                <div class="card wow fadeInUpBig" data-wow-delay=".3s">
+                    <div class="card-content">
+                        <div class="content">
+                            <img src="https://images.pexels.com/photos/1120049/pexels-photo-1120049.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="card wow fadeInUpBig" data-wow-delay=".6s">
+                    <div class="card-content">
+                        <div class="content">
+                            <img src="https://images.pexels.com/photos/1440387/pexels-photo-1440387.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="card wow fadeInUpBig" data-wow-delay=".9s">
+                    <div class="card-content">
+                        <div class="content">
+                            <img src="https://images.pexels.com/photos/127027/pexels-photo-127027.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="content">
+                            <img src="https://images.pexels.com/photos/1440406/pexels-photo-1440406.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Our Shop -->
+
+    <!-- Start Map Section -->
+    <section class="py-6 map-section">
+        <div class="container">
+            <div class="center">
+                <h1 class="headings is-size-2 wow fadeInUp">Our Location</h1>
+            </div>
+            <iframe class="mt-5 wow fadeInUp" data-wow-delay=".5s"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1624.2933107228773!2d121.42333039297841!3d14.470770023743764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ede770f44977%3A0x433639bed3b68662!2sSeven%20Eleven!5e0!3m2!1sen!2sph!4v1656596817610!5m2!1sen!2sph"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <!-- End Map Section -->
+
+    <!-- Start Footer -->
+    <footer class="custom-footer">
+        <div class="content center">
+            <p>
+                Designed with <i class="fas fa-heart has-text-danger"></i> by <a
+                    href="https://github.com/CarlCaraan">Carl
+                    Caraan</a>.
+                All Rights
+                Reserved &copy; 2022
+            </p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Top Scroll -->
+    <a href="#home" class="top-scroll">
+        <i class="fas fa-angle-up"></i>
+    </a>
+    <!-- End of Top Scroll -->
+
+    <!-- ========= ALL SCRIPTS ========= -->
+    <!-- JQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Wow JS -->
+    <script src="./assets/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <!-- Owl Carousel JS -->
+    <script src="./assets/js/owl.carousel.min.js"></script>
+
+    <!-- Modal Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Functions to open and close a modal
+            function openModal($el) {
+                $el.classList.add('is-active');
+            }
+
+            function closeModal($el) {
+                $el.classList.remove('is-active');
+            }
+
+            function closeAllModals() {
+                (document.querySelectorAll('.modal') || []).forEach(($modal) => {
+                    closeModal($modal);
+                });
+            }
+
+            // Add a click event on buttons to open a specific modal
+            (document.querySelectorAll('.js-modal-trigger') || []).forEach(($trigger) => {
+                const modal = $trigger.dataset.target;
+                const $target = document.getElementById(modal);
+
+                $trigger.addEventListener('click', () => {
+                    openModal($target);
+                });
+            });
+
+            // Add a click event on various child elements to close the parent modal
+            (document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {
+                const $target = $close.closest('.modal');
+
+                $close.addEventListener('click', () => {
+                    closeModal($target);
+                });
+            });
+
+            // Add a keyboard event to close all modals
+            document.addEventListener('keydown', (event) => {
+                const e = event || window.event;
+
+                if (e.keyCode === 27) { // Escape key
+                    closeAllModals();
+                }
+            });
+        });
+    </script>
+
+    <!-- Custom JS -->
+    <script src="./assets/js/custom.js"></script>
+</body>
+
+</html>

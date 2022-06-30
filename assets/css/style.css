@@ -1,0 +1,71 @@
+/* ========= All FONTS ========= */
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+/* ========= Global CSS ========= */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.center {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+}
+/* Navigation */
+.navbar {
+  font-family: "Montserrat", sans-serif;
+}
+/* Herosection */
+.herosection-section {
+  padding-block: 14rem;
+}
+.herosection-heading {
+  font-weight: 700;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+/* Our Shop */
+.ourshop-section {
+  background: #e7ebee;
+}
+.headings {
+  font-family: "Pacifico", cursive;
+  font-style: bold;
+}
+/*============= TOP SCROLL =============*/
+.top-scroll {
+  background-color: #acacac;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+}
+.top-scroll svg.svg-inline--fa {
+  font-size: 3rem;
+  height: 1.7rem;
+  color: #53595f;
+  background: white;
+}
+a.top-scroll {
+  right: 1.2rem;
+  bottom: 1.2rem;
+  position: fixed;
+  opacity: 0.8;
+  z-index: 1000;
+  display: none;
+}
+a.top-scroll:hover {
+  opacity: 0.5;
+}
+.custom-active {
+  color: #00d1b2;
+}
+/* ========= Footer ========= */
+.custom-footer {
+  padding-block: 2rem;
+  background-color: #95a5a6;
+  color: #fff;
+}
