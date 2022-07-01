@@ -1,15 +1,19 @@
 /* ========= All FONTS ========= */
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 /* ========= Global CSS ========= */
+:root {
+  --primary-app-color: #8071b3;
+  --secondary-app-color: #ffcc4f;
+  --light-primary-app-color: #95d2f3;
+}
 html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Quicksand-Regular, sans-serif, Helvetica;
 }
 .center {
   align-items: center;
@@ -17,13 +21,44 @@ body {
   text-align: center;
   display: flex;
 }
+a {
+  color: aliceblue;
+}
+a:hover {
+  color: var(--primary-app-color);
+}
+.color-primary-text {
+  color: var(--primary-app-color);
+  font-family: Quicksand-Regular, sans-serif, Helvetica;
+}
+
 /* Navigation */
 .navbar {
   font-family: "Montserrat", sans-serif;
 }
+.custom-btn-color {
+  background-color: var(--primary-app-color);
+  color: #fff;
+}
+.custom-btn-color:hover {
+  color: #fff;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+}
+.custom-btn-color-secondary {
+  background-color: #444549;
+  color: #fff;
+}
+.custom-btn-color-secondary:hover {
+  color: #fff;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+}
 /* Herosection */
 .herosection-section {
-  padding-block: 14rem;
+  padding-block: 13rem;
 }
 .herosection-heading {
   font-weight: 700;
@@ -33,9 +68,19 @@ body {
 .ourshop-section {
   background: #e7ebee;
 }
+/* In the Press Section */
+.in-the-press-section {
+  padding: 5rem;
+  background: #f0f1f4;
+}
 .headings {
-  font-family: "Pacifico", cursive;
-  font-style: bold;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  font-size: 30px;
+}
+.sub-headings {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
 }
 /*============= TOP SCROLL =============*/
 .top-scroll {
@@ -61,11 +106,20 @@ a.top-scroll:hover {
   opacity: 0.5;
 }
 .custom-active {
-  color: #00d1b2;
+  color: var(--primary-app-color);
 }
 /* ========= Footer ========= */
 .custom-footer {
-  padding-block: 2rem;
-  background-color: #95a5a6;
+  font-family: "Quicksand", sans-serif;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  background-color: #444549;
   color: #fff;
+  font-size: 16px !important;
+}
+.socket {
+  width: 30%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 0;
 }

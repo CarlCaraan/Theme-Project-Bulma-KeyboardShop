@@ -63,7 +63,7 @@
                     </div>
                 </section>
                 <footer class="modal-card-foot">
-                    <button class="button is-success">Login</button>
+                    <button class="button custom-btn-color">Login</button>
                     <button class="button">Cancel</button>
                 </footer>
             </div>
@@ -88,20 +88,20 @@
 
             <div id="navbarBasicExample" class="navbar-menu">
                 <div class="navbar-start">
-                    <a class="navbar-item" href="./index.html">
+                    <a class="navbar-item custom-navbar-item" href="./index.html">
                         Home
                     </a>
-                    <a class="navbar-item custom-active" href="./about.html">
+                    <a class="navbar-item custom-navbar-item custom-active" href="./about.html">
                         About Us
                     </a>
-                    <a class="navbar-item" href="./contact.html">
+                    <a class="navbar-item custom-navbar-item" href="./contact.html">
                         Contact Us
                     </a>
                 </div>
                 <div class="navbar-end">
                     <div class="navbar-item">
                         <div class="buttons">
-                            <a class="button is-primary">
+                            <a class="button custom-btn-color">
                                 <strong>Sign up</strong>
                             </a>
                             <a class="button is-light js-modal-trigger" data-target="modal-js-example">
@@ -130,16 +130,29 @@
     <!-- Start About Section -->
     <div class="container my-6 py-6">
         <div class="center">
-            <h1 class="headings is-size-2 wow fadeInUp">About Us</h1>
+            <div class="card">
+                <div class="card-content">
+                    <div class="content">
+                        <img src="https://en.akkogear.com/wp-content/uploads/2022/05/MOD-006%E7%BB%84%E5%90%88%E5%9B%BE1%E6%AF%941%E5%AE%BD-2.png"
+                            alt="" width="300px">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="center mt-6">
+            <h1 class="headings wow fadeInUp">About Us</h1>
         </div>
         <div class="center">
-            <p class="mt-5 is-size-4 wow fadeInUp" data-wow-delay=".2s">
-                From our physical store to our online e-store (meowandfriends.com.ph), we take pride in the
-                exclusive
-                collections that top-tier pet
-                products bring to the market and the incomparable customer service we provide to our clients
-                every day. Shopping for all
-                your pet care needs made easy with just a few clicks!
+            <p class="mt-5 is-size-5 wow fadeInUp" data-wow-delay=".2s">
+                We offer a wide range of custom mechanical keyboards and parts. Ikkaw is backed up by its robust and
+                integrated supply
+                chain, and is one of the brands with the most diverse selections of mechanical keyboard layouts in the
+                world. It is
+                dedicated to offering comprehensive keyboard size options to users including 108-Key (Full Size),
+                98-Key, 100-Key (96%),
+                87-Key (TKL), 84-Key (75%), 68-Key (65%), Alice, 61-Key (60%) arrangements. Our customer-centric mission
+                is that every
+                user is able to find their desired colors, layouts and switches with accessible choice.
             </p>
         </div>
         <hr>
@@ -150,9 +163,13 @@
     <section class="py-6 map-section">
         <div class="container">
             <div class="center">
-                <h1 class="headings is-size-2 wow fadeInUp" data-wow-delay=".6s">Our Location</h1>
+                <h1 class="headings wow fadeInUp">Our Location</h1>
             </div>
-            <iframe class="mt-5 wow fadeInUp" data-wow-delay=".9s"
+            <div class="center">
+                <p class="sub-headings is-size-6 wow fadeInUp" data-wow-delay=".3s">If you can't stop thingking about
+                    it... But it.</p>
+            </div>
+            <iframe class="mt-5 wow fadeInUp" data-wow-delay=".5s"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1624.2933107228773!2d121.42333039297841!3d14.470770023743764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ede770f44977%3A0x433639bed3b68662!2sSeven%20Eleven!5e0!3m2!1sen!2sph!4v1656596817610!5m2!1sen!2sph"
                 width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -162,14 +179,135 @@
 
     <!-- Start Footer -->
     <footer class="custom-footer">
-        <div class="content center">
-            <p>
-                Designed with <i class="fas fa-heart has-text-danger"></i> by <a
-                    href="https://github.com/CarlCaraan">Carl
-                    Caraan</a>.
-                All Rights
-                Reserved &copy; 2022
-            </p>
+        <div class="container">
+            <!-- Three columns created using columns class of Bulma -->
+            <div class="columns">
+                <div class="column is-one-third">
+                    <!-- Heading is left aligned, medium weight -->
+                    <h4 class="bd-footer-title 
+                     has-text-weight-medium
+                     has-text-left">
+                        <img src="" alt="">
+                    </h4>
+
+                    <!-- footer content -->
+                    <p class="bd-footer-link 
+                    has-text-left">
+                        <span class="color-primary-text">Email:</span> support@ikkawgear.com<br>
+                        Hours: 9:30am-6:00pm UTC+8
+                    </p>
+                </div>
+
+                <div class="column">
+                    <h4 class="bd-footer-title 
+                     has-text-weight-medium 
+                     has-text-justify">
+                        Products
+                        <hr class="socket">
+                    </h4>
+
+                    <!-- Column 2 lists with links -->
+                    <p class="bd-footer-link">
+                        <a href="https://">
+                            <span class="icon-text">
+                                <span>Keyboard</span>
+                            </span>
+                        </a>
+                        <br />
+                        <a href="https://">
+                            <span class="icon-text">
+                                <span>Keycaps</span>
+                            </span>
+                        </a>
+                        <br />
+                        <a href="https://">
+                            <span class="icon-text">
+                                <span>Mouse</span>
+                            </span>
+                        </a>
+                        <br />
+                        <a href="https://">
+                            <span class="icon-text">
+                                <span>Switch</span>
+                            </span>
+                        </a>
+                        <br />
+                        <a href="https://">
+                            <span class="icon-text">
+                                <span>DIY Kit</span>
+                            </span>
+                        </a>
+                    </p>
+
+                </div>
+                <div class="column">
+                    <h4 class="bd-footer-title
+                     has-text-weight-medium
+                     has-text-justify">
+                        After-Sales
+                        <hr class="socket">
+                    </h4>
+
+                    <!-- Column 3 lists with links -->
+                    <p class="bd-footer-link">
+                        <a href="https://">
+                            <span class="icon-text">
+                                <span>Download</span>
+                            </span>
+                        </a>
+                        <br />
+                        <a href="https://">
+                            <span class="icon-text">
+                                <span>Warranty Service</span>
+                            </span>
+                        </a>
+                        <br>
+                    </p>
+
+                </div>
+                <div class="column">
+                    <h4 class="bd-footer-title
+                     has-text-weight-medium
+                     has-text-justify">
+                        Communication
+                        <hr class="socket">
+                    </h4>
+
+                    <!-- Column 3 lists with links -->
+                    <p class="bd-footer-link">
+                        <a href="https://">
+                            <span class="icon-text">
+                                <span>Contact Us</span>
+                            </span>
+                        </a>
+                        <br />
+                        <a href="https://">
+                            <span class="icon-text">
+                                <span>Partner</span>
+                            </span>
+                        </a>
+                        <br />
+                        <a href="https://">
+                            <span class="icon-text">
+                                <span>Press Release</span>
+                            </span>
+                        </a>
+                    </p>
+
+                </div>
+
+            </div>
+            <!-- Copyright symbol of company -->
+            <hr>
+            <div class="content has-text-centered">
+                <p>
+                    Designed with <i class="fas fa-heart has-text-danger"></i> by <a
+                        href="https://github.com/CarlCaraan">Carl
+                        Caraan</a>.
+                    All Rights
+                    Reserved &copy; 2022
+                </p>
+            </div>
         </div>
     </footer>
     <!-- End Footer -->
