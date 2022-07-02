@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Meow and Friends</title>
-    <link rel="icon"
-        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_tmc8pJQqRVun6mkInXVFbuCfEtZoo3wkaQ&usqp=CAU" />
+    <title>About | Ikkaw</title>
+    <link rel="icon" href="https://www.pngkey.com/png/full/230-2304720_keyboard-icon-png-computer-keyboard.png" />
 
     <!-- Bulma Css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
@@ -115,7 +114,7 @@
         <!-- End Navigation -->
 
         <!-- Start Breadcrumb -->
-        <nav class="breadcrumb mt-4" aria-label="breadcrumbs">
+        <nav class="breadcrumb mt-4 ml-2" aria-label="breadcrumbs">
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li class="is-active"><a href="#" aria-current="page">About</a></li>
@@ -178,7 +177,7 @@
     <!-- End Map Section -->
 
     <!-- Start Footer -->
-    <footer class="custom-footer">
+    <footer class="custom-footer for-mobile">
         <div class="container">
             <!-- Three columns created using columns class of Bulma -->
             <div class="columns">
@@ -187,15 +186,19 @@
                     <h4 class="bd-footer-title 
                      has-text-weight-medium
                      has-text-left">
-                        <img src="https://www.pngkey.com/png/full/230-2304720_keyboard-icon-png-computer-keyboard.png"
-                            alt="footer_image" width="100px">
+                        <div class="for-mobile">
+                            <img src="https://www.pngkey.com/png/full/230-2304720_keyboard-icon-png-computer-keyboard.png"
+                                alt="footer_image" width="100px">
+                        </div>
                     </h4>
 
                     <!-- footer content -->
                     <p class="bd-footer-link 
-                    has-text-left">
+                    has-text-left for-mobile">
+                    <div>
                         <span class="color-primary-text">Email:</span> support@ikkawgear.com<br>
                         Hours: 9:30am-6:00pm UTC+8
+                    </div>
                     </p>
                 </div>
 
@@ -204,7 +207,9 @@
                      has-text-weight-medium 
                      has-text-justify">
                         Products
-                        <hr class="socket">
+                        <div class="for-mobile">
+                            <hr class="socket">
+                        </div>
                     </h4>
 
                     <!-- Column 2 lists with links -->
@@ -246,7 +251,9 @@
                      has-text-weight-medium
                      has-text-justify">
                         After-Sales
-                        <hr class="socket">
+                        <div class="for-mobile">
+                            <hr class="socket">
+                        </div>
                     </h4>
 
                     <!-- Column 3 lists with links -->
@@ -271,7 +278,9 @@
                      has-text-weight-medium
                      has-text-justify">
                         Communication
-                        <hr class="socket">
+                        <div class="for-mobile">
+                            <hr class="socket">
+                        </div>
                     </h4>
 
                     <!-- Column 3 lists with links -->
@@ -381,6 +390,21 @@
 
     <!-- Custom JS -->
     <script src="./assets/js/custom.js"></script>
+
+    <!-- Navigation Collapse JS -->
+    <script>
+        $(document).ready(function () {
+
+            // Check for click events on the navbar burger icon
+            $(".navbar-burger").click(function () {
+
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                $(".navbar-burger").toggleClass("is-active");
+                $(".navbar-menu").toggleClass("is-active");
+
+            });
+        });
+    </script>
 </body>
 
 </html>

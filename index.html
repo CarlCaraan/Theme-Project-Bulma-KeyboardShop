@@ -231,19 +231,21 @@
 
             <div class="columns mt-6">
                 <div class="column wow fadeInRight" data-wow-delay=".2s">
-                    <img src="https://en.akkogear.com/wp-content/themes/xtra/img/pc_gamer.png" alt="">
+                    <img width="100%" src="https://en.akkogear.com/wp-content/themes/xtra/img/pc_gamer.png" alt="image">
                 </div>
                 <div class="column wow fadeInRight" data-wow-delay=".4s">
-                    <img src="https://en.akkogear.com/wp-content/themes/xtra/img/mmorpg.png" alt="">
+                    <img width="100%" src="https://en.akkogear.com/wp-content/themes/xtra/img/mmorpg.png" alt="image">
                 </div>
                 <div class="column wow fadeInRight" data-wow-delay=".6s">
-                    <img src="https://en.akkogear.com/wp-content/themes/xtra/img/forbes.png" alt="">
+                    <img width="100%" src="https://en.akkogear.com/wp-content/themes/xtra/img/forbes.png" alt="image">
                 </div>
                 <div class="column wow fadeInRight" data-wow-delay=".8s">
-                    <img src="https://en.akkogear.com/wp-content/themes/xtra/img/tom's-hardware.png" alt="">
+                    <img width="100%" src="https://en.akkogear.com/wp-content/themes/xtra/img/tom's-hardware.png"
+                        alt="image">
                 </div>
                 <div class="column wow fadeInRight" data-wow-delay="1s">
-                    <img src="https://en.akkogear.com/wp-content/themes/xtra/img/digital_trends.png" alt="">
+                    <img width="100%" src="https://en.akkogear.com/wp-content/themes/xtra/img/digital_trends.png"
+                        alt="image">
                 </div>
             </div>
         </div>
@@ -251,7 +253,7 @@
     <!-- End In The Press Section -->
 
     <!-- Start Footer -->
-    <footer class="custom-footer">
+    <footer class="custom-footer for-mobile">
         <div class="container">
             <!-- Three columns created using columns class of Bulma -->
             <div class="columns">
@@ -260,15 +262,19 @@
                     <h4 class="bd-footer-title 
                  has-text-weight-medium
                  has-text-left">
-                        <img src="https://www.pngkey.com/png/full/230-2304720_keyboard-icon-png-computer-keyboard.png"
-                            alt="footer_image" width="100px">
+                        <div class="for-mobile">
+                            <img src="https://www.pngkey.com/png/full/230-2304720_keyboard-icon-png-computer-keyboard.png"
+                                alt="footer_image" width="100px">
+                        </div>
                     </h4>
 
                     <!-- footer content -->
                     <p class="bd-footer-link 
-                has-text-left">
+                has-text-left for-mobile">
+                    <div>
                         <span class="color-primary-text">Email:</span> support@ikkawgear.com<br>
                         Hours: 9:30am-6:00pm UTC+8
+                    </div>
                     </p>
                 </div>
 
@@ -277,7 +283,9 @@
                  has-text-weight-medium 
                  has-text-justify">
                         Products
-                        <hr class="socket">
+                        <div class="for-mobile">
+                            <hr class="socket">
+                        </div>
                     </h4>
 
                     <!-- Column 2 lists with links -->
@@ -319,7 +327,9 @@
                  has-text-weight-medium
                  has-text-justify">
                         After-Sales
-                        <hr class="socket">
+                        <div class="for-mobile">
+                            <hr class="socket">
+                        </div>
                     </h4>
 
                     <!-- Column 3 lists with links -->
@@ -344,7 +354,9 @@
                  has-text-weight-medium
                  has-text-justify">
                         Communication
-                        <hr class="socket">
+                        <div class="for-mobile">
+                            <hr class="socket">
+                        </div>
                     </h4>
 
                     <!-- Column 3 lists with links -->
@@ -455,6 +467,21 @@
 
     <!-- Custom JS -->
     <script src="./assets/js/custom.js"></script>
+
+    <!-- Navigation Collapse JS -->
+    <script>
+        $(document).ready(function () {
+
+            // Check for click events on the navbar burger icon
+            $(".navbar-burger").click(function () {
+
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                $(".navbar-burger").toggleClass("is-active");
+                $(".navbar-menu").toggleClass("is-active");
+
+            });
+        });
+    </script>
 </body>
 
 </html>
